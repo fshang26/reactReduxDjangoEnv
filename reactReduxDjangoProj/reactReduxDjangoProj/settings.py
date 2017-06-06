@@ -40,6 +40,7 @@ INSTALLED_APPS = [
   'rest_framework',
   'mainApp',
   'authAPIApp',
+  'webpack_loader',
 ]
 
 MIDDLEWARE = [
@@ -123,5 +124,20 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, 'static'),
+  os.path.join(BASE_DIR, 'assets'),
 )
+
+WEBPACK_LOADER = {
+  'DEFAULT': {
+    'BUNDLE_DIR_NAME': 'bundles/',
+    'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+  }
+}
+
+if not DEBUG:
+  WEBPACK_LOADER['DEFAULT'].update({
+    'BUNDLE_DIR_NAME': 'dist/',
+    'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats-prod.json'),
+  })
+
+

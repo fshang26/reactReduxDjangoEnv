@@ -1,0 +1,5 @@
+1. npm run build: build dev main.js, then localhost can run with this main.js
+
+2. npm run watch: watch and build dev main.js if source file changed, refresh browser to reflect new change
+
+3. npm run hotwatch: with node backend running, hot-reloading new change
