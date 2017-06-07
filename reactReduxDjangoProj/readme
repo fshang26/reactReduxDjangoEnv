@@ -5,3 +5,7 @@
 3. npm run hotwatch: with node backend running, hot-reloading new change
 
 4. npm run build-prod: build prod dist/main-[#hash].js
+
+5. Using Webpack transparently with Django + hot reloading React components as a bonus
+	* http://owaislone.org/blog/webpack-plus-reactjs-and-django/
+	* webpack-dev-server react-hot-loader two packages for hot-reload
