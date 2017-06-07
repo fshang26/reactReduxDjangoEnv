@@ -3,6 +3,7 @@ var BundleTracker = require('webpack-bundle-tracker')
 var config = require('./webpack.config.base.js')
 
 config.output.path = require('path').resolve('./assets/dist')
+config.output.filename = "[name]-[hash].js"
 
 config.plugins = config.plugins.concat([
   new BundleTracker({filename: './webpack-stats-prod.json'}),
