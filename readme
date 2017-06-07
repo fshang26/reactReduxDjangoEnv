@@ -3,3 +3,5 @@
 2. npm run watch: watch and build dev main.js if source file changed, refresh browser to reflect new change
 
 3. npm run hotwatch: with node backend running, hot-reloading new change
+
+4. npm run build-prod: build prod dist/main-[#hash].js
