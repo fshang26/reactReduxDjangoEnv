@@ -9553,7 +9553,7 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'h1',
         null,
-        'Hello, world234.'
+        'Hello, world.'
       );
     }
   }]);
@@ -9592,7 +9592,7 @@ var _app2 = _interopRequireDefault(_app);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react2.default.createElement(_app2.default, null), document.getElementById('react-app'));
+(0, _reactDom.render)(_react2.default.createElement(_app2.default, null), document.getElementById('main-app'));
 
 /***/ }),
 /* 84 */

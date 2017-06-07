@@ -1,6 +1,6 @@
-import path from 'path';
-import webpack from 'webpack';
-import BundleTracker from 'webpack-bundle-tracker';
+var path = require("path")
+var webpack = require('webpack')
+var BundleTracker = require('webpack-bundle-tracker')
 
 module.exports = {
   context: __dirname,
