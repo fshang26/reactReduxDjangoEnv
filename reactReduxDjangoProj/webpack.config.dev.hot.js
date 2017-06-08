@@ -16,13 +16,13 @@ config.output.publicPath = 'http://localhost:3000/assets/bundles/'  // Tell djan
 // Add HotModuleReplacementPlugin and BundleTracker plugins
 config.plugins = config.plugins.concat([
   new webpack.HotModuleReplacementPlugin(),
-  new webpack.NoErrorsPlugin(), // don't reload if there is an error
+  new webpack.NoEmitOnErrorsPlugin(), // don't reload if there is an error
   new BundleTracker({filename: './webpack-stats.json'}),
 ])
 
 // Add a loader for JSX files with react-hot enabled
 config.module.loaders.push(
-  { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot-loader', 'babel-loader'] }
+  { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader'] }
 )
 
 module.exports = config

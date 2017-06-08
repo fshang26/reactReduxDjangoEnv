@@ -1,11 +1,30 @@
-1. npm run build: build dev main.js, then localhost can run with this main.js
+WIKI
 
-2. npm run watch: watch and build dev main.js if source file changed, refresh browser to reflect new change
+- npm run build: build dev main.js, then localhost can run with this main.js
 
-3. npm run hotwatch: with node backend running, hot-reloading new change (when switching between 2 and 3, a build is needed)
+- npm run watch: watch and build dev main.js if source file changed, refresh browser to reflect new change
 
-4. npm run build-prod: build prod dist/main-[#hash].js
+- npm run hotwatch: with node backend running, hot-reloading new change (when switching between 2 and 3, a build is needed)
 
-5. Using Webpack transparently with Django + hot reloading React components as a bonus
+- npm run build-prod: build prod dist/main-[#hash].js
+
+- ./node_modules/.bin/webpack --config webpack.config.dev.js
+
+- Hot reloading
 	* http://owaislone.org/blog/webpack-plus-reactjs-and-django/
 	* webpack-dev-server react-hot-loader two packages for hot-reload
+	* in console [HMR]: hot module replacement, [WDS]: webpack-dev-server
+	* https://github.com/gaearon/react-transform-hmr (React Hot Loader 3 is the solution, not fully ready yet. Currently babel-preset-react-hmre is the solution: Make sure you process files with babel-loader, and that you don’t use React Hot Loader (it’s not needed with this transform)
+	* babel-preset-react-hmre 
+		1. Experimental, 
+		2. doesn't reload functional components 
+		3. doesn't reload container functions like mapStateToProps. 
+		4. React Hot Loader 3 is in beta, it addresses these downsides. It will be the recommended approach when released.
+
+- babel-polyfill 50k
+
+
+TODO
+- webpack: convert from ES5 to ES6
+- package.json: packages' clarification in dependencies or devDependencies?
+
