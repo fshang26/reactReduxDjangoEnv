@@ -3,6 +3,10 @@ var webpack = require('webpack')
 var BundleTracker = require('webpack-bundle-tracker')
 var config = require('./webpack.config.base')
 
+const GLOBALS = {
+  'process.env.NODE_ENV': JSON.stringify('devhot')
+};
+
 // Use webpack dev server
 config.entry = [
   'webpack-dev-server/client?http://localhost:3000',
@@ -11,7 +15,7 @@ config.entry = [
 ]
 
 // override django's STATIC_URL for webpack bundles
-config.output.publicPath = 'http://localhost:3000/assets/bundles/'  // Tell django to use this URL to load packages and not use STATIC_URL + bundle_name      
+config.output.publicPath = 'http://localhost:3000/assets/bundles/'  // Tell django to use this URL to load packages and not use STATIC_URL + bundle_name
 
 // Add HotModuleReplacementPlugin and BundleTracker plugins
 config.plugins = config.plugins.concat([
