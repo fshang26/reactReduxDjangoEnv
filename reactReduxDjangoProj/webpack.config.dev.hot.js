@@ -11,7 +11,7 @@ const GLOBALS = {
 config.entry = [
   'webpack-dev-server/client?http://localhost:3000',
   'webpack/hot/only-dev-server',
-  './assets/js/index'
+  './assets/src/index'
 ]
 
 // override django's STATIC_URL for webpack bundles
