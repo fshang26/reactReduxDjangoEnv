@@ -1,7 +1,6 @@
-var path = require("path")
-var webpack = require('webpack')
-var BundleTracker = require('webpack-bundle-tracker')
-var config = require('./webpack.config.base')
+import path from 'path';
+import BundleTracker from 'webpack-bundle-tracker';
+import config from'./webpack.config.base.babel';
 
 config.output.path = path.resolve('./assets/bundles')
 config.output.filename = "[name].js"
@@ -15,4 +14,4 @@ config.module.loaders.push(
   { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' }
 )
 
-module.exports = config
+export default config;

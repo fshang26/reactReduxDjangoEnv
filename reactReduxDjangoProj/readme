@@ -9,7 +9,7 @@ WIKI
 
 - npm run build-prod: build prod dist/main-[#hash].js (not fully walking thru yet)
 
-- ./node_modules/.bin/webpack --config webpack.config.dev.js
+- ./node_modules/.bin/webpack --config webpack.config.dev.babel.js
 
 - Hot reloading
   * http://owaislone.org/blog/webpack-plus-reactjs-and-django/
@@ -23,6 +23,7 @@ WIKI
     4. React Hot Loader 3 is in beta, it addresses these downsides. It will be the recommended approach when released.
 
 - babel-polyfill 50k
+- babel-register package is for building webpack.config.*.babel.js, webpack.config.dev.hot.js doesn't need this becasue it use babel-node
 
 
 TODO
