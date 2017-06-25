@@ -2,9 +2,9 @@ WIKI
 
   1. . bin/activate (corresponding: deactivate - no bin) (~/Projects/reactReduxDjangoEnv)
   2. npm build/watch
-     - npm run build: build dev main.js, then localhost can run with this main.js
-     - npm run watch: watch and build dev main.js if source file changed, refresh browser to reflect new change
-     - npm run hotwatch: with node backend running, hot-reloading new change (when switching between 2 and 3, a build is needed)
+     - 'npm run build' build dev main.js, then localhost can run with this main.js
+     - 'npm run build:watch' build and watch dev main.js if source file changed, refresh browser to reflect new change
+     - 'npm start -s' with node backend running, hot-reloading new change (when switching between 2 and 3, a build is needed)
   3. python manage.py runserver (~/Projects/reactReduxDjangoEnv/reactReduxDjangoProj)
 
 - npm run build-prod: build prod dist/main-[#hash].js (not fully walking thru yet)
