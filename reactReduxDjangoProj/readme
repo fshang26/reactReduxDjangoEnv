@@ -34,3 +34,5 @@ TODO
 - modal dialog
 - data grid
 - pivot table
+- should node_modules in git?
+- should Django Env in git?
