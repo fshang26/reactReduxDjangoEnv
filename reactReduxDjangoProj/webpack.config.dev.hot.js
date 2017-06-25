@@ -1,7 +1,6 @@
-var path = require("path")
-var webpack = require('webpack')
-var BundleTracker = require('webpack-bundle-tracker')
-var config = require('./webpack.config.base')
+import webpack from 'webpack';
+import BundleTracker from 'webpack-bundle-tracker';
+import config from'./webpack.config.base.babel';
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('devhot')
@@ -29,4 +28,4 @@ config.module.loaders.push(
   { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader'] }
 )
 
-module.exports = config
+export default config;

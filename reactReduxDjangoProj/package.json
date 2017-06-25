@@ -4,10 +4,10 @@
   "description": "The boilerplate for React Redux Django SPA",
   "main": "index.js",
   "scripts": {
-    "build-prod": "webpack --config webpack.config.prod.js --progress --colors",
-    "build": "webpack --config webpack.config.dev.js --progress --colors",
-    "watch": "webpack --config webpack.config.dev.js --watch",
-    "hotwatch": "node server.js",
+    "build-prod": "webpack --config webpack.config.prod.babel.js --progress --colors",
+    "build": "webpack --config webpack.config.dev.babel.js --progress --colors",
+    "watch": "webpack --config webpack.config.dev.babel.js --watch",
+    "hotwatch": "babel-node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Feng Shang",
@@ -19,6 +19,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
+    "babel-register": "^6.24.1",
     "webpack": "^2.6.1",
     "webpack-bundle-tracker": "^0.2.0",
     "webpack-dev-server": "^2.4.5"
