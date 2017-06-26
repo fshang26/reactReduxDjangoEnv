@@ -42,3 +42,4 @@ TODO
 - should node_modules in git?
 - should Django Env in git?
 - seperate css
+- should reactReduxDjangoProj/webpack-stats.json in git?
