@@ -23,8 +23,12 @@ WIKI
     4. React Hot Loader 3 is in beta, it addresses these downsides. It will be the recommended approach when released.
 
 - babel-polyfill 50k
+
 - babel-register package is for building webpack.config.*.babel.js, webpack.config.dev.hot.js doesn't need this becasue it use babel-node
-- react-router-dom: new react-router (> Ver4), new logic is, index->app->routes
+
+- react-router-dom: new react-router (> Version 4), new logic order is, index->app->routes
+  * https://reacttraining.com/react-router/web/example/basic
+  * https://reacttraining.com/react-router/web/guides/code-splitting
 
 
 TODO
