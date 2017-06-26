@@ -6,6 +6,8 @@ const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('devhot')
 };
 
+config.devtool = 'inline-source-map',
+
 // Use webpack dev server
 config.entry = [
   'webpack-dev-server/client?http://localhost:3000',
@@ -25,7 +27,8 @@ config.plugins = config.plugins.concat([
 
 // Add a loader for JSX files with react-hot enabled
 config.module.loaders.push(
-  { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader'] }
+  { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader?sourceMap'] },
+  {test: /(\.css|\.scss|\.sass)$/, loaders: ['style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap']}
 )
 
 export default config;

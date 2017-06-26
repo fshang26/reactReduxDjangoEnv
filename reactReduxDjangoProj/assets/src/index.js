@@ -5,9 +5,7 @@ import 'babel-polyfill';
 import React from 'react';
 import {render} from 'react-dom';
 import App from './components/App';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import HomePage from './components/home/HomePage';
-import AboutPage from './components/about/AboutPage';
+import './styles/styles.css';
 
 render (
   <App/>,
