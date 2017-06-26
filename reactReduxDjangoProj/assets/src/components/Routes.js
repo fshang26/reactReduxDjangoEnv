@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 import HomePage from './home/HomePage';
 import AboutPage from './about/AboutPage';
 
@@ -19,6 +19,6 @@ const Routes = () => (
       <Route path="/about" component={AboutPage}/>
     </div>
   </Router>
-)
+);
 
-export default Routes
+export default Routes;
