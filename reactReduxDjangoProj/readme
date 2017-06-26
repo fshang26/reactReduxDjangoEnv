@@ -24,6 +24,7 @@ WIKI
 
 - babel-polyfill 50k
 - babel-register package is for building webpack.config.*.babel.js, webpack.config.dev.hot.js doesn't need this becasue it use babel-node
+- react-router-dom: new react-router (> Ver4), new logic is, index->app->routes
 
 
 TODO
