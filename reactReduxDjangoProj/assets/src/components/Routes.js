@@ -2,11 +2,15 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 import HomePage from './home/HomePage';
 import AboutPage from './about/AboutPage';
+import CoursesPage from './course/CoursesPage';
 
 const routes = [{
   path: '/',
   exact: true,
   main: HomePage
+}, {
+  path: '/courses',
+  main: CoursesPage
 }, {
   path: '/about',
   main: AboutPage
