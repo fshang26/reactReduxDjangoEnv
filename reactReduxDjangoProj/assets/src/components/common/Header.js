@@ -4,8 +4,6 @@ import {
   NavLink,
   Route
 } from 'react-router-dom';
-import HomePage from '../home/HomePage';
-import AboutPage from '../about/AboutPage';
 
 const Header = () => {
   return (
