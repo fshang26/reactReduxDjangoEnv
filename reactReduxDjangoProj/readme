@@ -27,6 +27,7 @@ WIKI
 - babel-register package is for building webpack.config.*.babel.js, webpack.config.dev.hot.js doesn't need this becasue it use babel-node
 
 - react-router-dom: new react-router (> Version 4), new logic order is, index->app->routes
+  * https://reacttraining.com/react-router/web/example/sidebar
   * https://reacttraining.com/react-router/web/example/basic
   * https://reacttraining.com/react-router/web/guides/code-splitting
 

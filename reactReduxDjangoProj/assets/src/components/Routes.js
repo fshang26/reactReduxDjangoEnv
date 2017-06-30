@@ -1,24 +1,28 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import HomePage from './home/HomePage';
 import AboutPage from './about/AboutPage';
 
+const routes = [{
+  path: '/',
+  exact: true,
+  main: HomePage
+}, {
+  path: '/about',
+  main: AboutPage
+}];
+
 const Routes = () => (
-  <Router>
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-      </ul>
-      <hr/>
-      <Route exact path="/" component={HomePage}/>
-      <Route path="/about" component={AboutPage}/>
-    </div>
-  </Router>
+  <div>
+    {routes.map((route, index) => (
+      <Route
+        key={index}
+        path={route.path}
+        exact={route.exact}
+        component={route.main}
+      />
+    ))}
+  </div>
 );
 
 export default Routes;
