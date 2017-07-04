@@ -3,6 +3,10 @@ import webpack from 'webpack';
 import BundleTracker from 'webpack-bundle-tracker';
 import config from './webpack.config.base.bable';
 
+const GLOBALS = {
+  'process.env.NODE_ENV': JSON.stringify('production')
+};
+
 config.output.path = path.resolve('./assets/dist')
 config.output.filename = "[name]-[hash].js"
 

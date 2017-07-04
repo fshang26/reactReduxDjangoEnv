@@ -29,6 +29,13 @@ require.extensions['.css'] = function () {return null;};
 require.extensions['.png'] = function () {return null;};
 require.extensions['.jpg'] = function () {return null;};
 
-// Configure JSDOM and set global variables
-// to simulate a browser environment for tests.
-//require('mocha-jsdom')();
+// instead use jsdom-global to configure JSDOM and set global variables to simulate a browser environment for tests.
+before(function () {
+  this.jsdom = require('jsdom-global')();
+});
+
+after(function () {
+  this.jsdom();
+});
+
+
