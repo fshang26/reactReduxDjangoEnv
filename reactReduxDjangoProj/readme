@@ -126,7 +126,6 @@ WIKI
 - package.json: "test": "mocha --reporter progress tools/testSetup.js \"assets/src/**/*.test.js\"",
 
 TODO
-- http://localhost:8000/courses Page not found
 - seperate css
 - package.json: packages' clarification in dependencies or devDependencies?
 - upgrade to React Hot Loader 3
