@@ -21,6 +21,10 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', ensure_csrf_cookie(TemplateView.as_view(template_name="index.html"))),
+    url(r'^courses/',  ensure_csrf_cookie(TemplateView.as_view(template_name="index.html"))),
+    url(r'^about/',  ensure_csrf_cookie(TemplateView.as_view(template_name="index.html"))),
     url(r'^mainApp/', include('mainApp.urls')),
     url(r'^authAPIApp/', include('authAPIApp.urls')),
+
+    #url(r'^(?:.*)/?$',  ensure_csrf_cookie(TemplateView.as_view(template_name="index.html"))),
 ]
