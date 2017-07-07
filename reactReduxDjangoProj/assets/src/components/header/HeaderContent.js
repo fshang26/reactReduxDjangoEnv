@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
-import LoadingDots from './LoadingDots';
+import LoadingDots from '../common/Loadingdots';
 import * as loginActions from '../../actions/loginActions';
 import {bindActionCreators} from 'redux';
 
-class Header extends React.Component {
+class HeaderContent extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.logout = this.logout.bind(this);
@@ -53,11 +53,11 @@ class Header extends React.Component {
   );
 };*/
 
-Header.contextTypes = {
+HeaderContent.contextTypes = {
   router: PropTypes.object
 };
 
-Header.propTypes = {
+HeaderContent.propTypes = {
   loading: PropTypes.bool.isRequired,
   actions: PropTypes.object.isRequired
 };
@@ -74,4 +74,4 @@ function mapDispatchToProps(dispatch) {
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderContent);

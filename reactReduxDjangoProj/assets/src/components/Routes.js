@@ -9,7 +9,7 @@ import LoginPage from './login/LoginPage';
 import NotFoundPage from './notfound/NotFoundPage';
 
 const Routes = () => (
-  <div>
+  <div className="app-content">
     <Switch>
       <Route path="/" exact component={HomePage}/>
       <Route path="/login" exact component={LoginPage}/>

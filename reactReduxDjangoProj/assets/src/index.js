@@ -6,7 +6,7 @@ import {render} from 'react-dom';
 import configureStore from './store/configureStore';
 import {Provider} from 'react-redux';
 import {BrowserRouter as Router} from 'react-router-dom';
-import App from './components/App';
+import Header from './components/header/Header';
 import {loadCourses} from './actions/courseActions'; // called a named import
 import {loadAuthors} from './actions/authorActions';
 import './styles/styles.scss';
@@ -22,7 +22,7 @@ render (
   <Provider store={store}>
     <Router>
       <div>
-        <App/>
+        <Header/>
         <Routes/>
       </div>
     </Router>
