@@ -127,6 +127,7 @@ WIKI
 
 - django/python
   * http://localhost:8000/admin/
+  * react csrftoken config via axios: https://gist.github.com/Yogendra0Sharma/5aa96ebfd0854623a5451c53672088d5
 
 TODO
 - seperate css

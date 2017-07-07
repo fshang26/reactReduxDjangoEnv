@@ -1,17 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
 import LoadingDots from './LoadingDots';
-import loginApi from '../../api/loginApi';
+import * as loginActions from '../../actions/loginActions';
+import {bindActionCreators} from 'redux';
 
 class Header extends React.Component {
   constructor(props, context) {
     super(props, context);
+    this.logout = this.logout.bind(this);
   }
 
   logout() {
-    loginApi.logout().then(() => {
-      // $location.url('/login');
+    this.props.actions.logout().then(() => {
+      //$location.url('/login');
     });
   }
 
@@ -53,4 +56,16 @@ Header.propTypes = {
   loading: PropTypes.bool.isRequired
 };
 
-export default Header;
+function mapStateToProps(state, ownProps) {
+  return {
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(loginActions, dispatch)
+  };
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

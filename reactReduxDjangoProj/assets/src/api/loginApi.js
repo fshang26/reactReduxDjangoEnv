@@ -20,7 +20,7 @@ class LoginApi {
     });
   }
 
-  static getList() {
+  /*static getList() {
     return axios({
       method: 'get',
       url: '/mainApp/lists/',
@@ -36,7 +36,7 @@ class LoginApi {
         title: 'hello1'
       }
     });
-  }
+  }*/
 }
 
 export default LoginApi;
