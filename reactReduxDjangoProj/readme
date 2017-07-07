@@ -130,6 +130,8 @@ WIKI
   * react csrftoken config via axios: https://gist.github.com/Yogendra0Sharma/5aa96ebfd0854623a5451c53672088d5
 
 TODO
+- post failed when in <form> in LoginForm.js
+- redirect when not loggin (dynamic routes??)
 - seperate css
 - package.json: packages' clarification in dependencies or devDependencies?
 - upgrade to React Hot Loader 3

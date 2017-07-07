@@ -4,11 +4,16 @@ import HomePage from './home/HomePage';
 import AboutPage from './about/AboutPage';
 import CoursesPage from './course/CoursesPage';
 import ManageCoursePage from './course/ManageCoursePage'; // eslint-disable-line import/no-named-as-default
+import LoginPage from './login/LoginPage';
 
 const routes = [{
   path: '/',
   exact: true,
   main: HomePage
+}, {
+  path: '/login',
+  exact: true,
+  main: LoginPage
 }, {
   path: '/courses',
   exact: true,

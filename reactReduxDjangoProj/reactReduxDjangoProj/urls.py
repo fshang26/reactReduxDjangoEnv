@@ -26,5 +26,5 @@ urlpatterns = [
     url(r'^mainApp/', include('mainApp.urls')),
     url(r'^authAPIApp/', include('authAPIApp.urls')),
 
-    #url(r'^.*$',  ensure_csrf_cookie(TemplateView.as_view(template_name="index.html"))),
+    url(r'^.*$',  ensure_csrf_cookie(TemplateView.as_view(template_name="index.html"))),
 ]

@@ -1,22 +1,18 @@
 import axios from './api.config';
 
 class LoginApi {
-
-  static logout() {
-      return axios({
-        method: 'get',
-        url: '/authAPIApp/logout/',
-      });
-  }
-
-  static login() {
+  static login(userinfo) {
     return axios({
       method: 'post',
       url: '/authAPIApp/login/',
-      data: {
-        username: 'fshang',
-        password: 'filter366'
-      }
+      data: userinfo
+    });
+  }
+
+  static logout() {
+    return axios({
+      method: 'get',
+      url: '/authAPIApp/logout/',
     });
   }
 

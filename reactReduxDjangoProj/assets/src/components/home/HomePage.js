@@ -1,8 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
-// TODO: (???) currently use class is because of hot reloading, can use stateless function component here.
 class HomePage extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+  }
+
+  componentWillMount() {
+    if (!localStorage.currentUser){
+      this.context.router.history.push('/login');
+    }
+  }
+
   render() {
     return (
       <div>
@@ -13,5 +23,9 @@ class HomePage extends React.Component {
     );
   }
 }
+
+HomePage.contextTypes = {
+  router: PropTypes.object
+};
 
 export default HomePage;

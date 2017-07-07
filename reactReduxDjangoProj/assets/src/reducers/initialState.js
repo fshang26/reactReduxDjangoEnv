@@ -1,6 +1,9 @@
 export default {
   authors: [],
   courses: [],
-  userinfo: {},
+  login: {
+    username: '',
+    password: ''
+  },
   ajaxCallInProgress: 0
 };

@@ -13,8 +13,9 @@ class Header extends React.Component {
   }
 
   logout() {
+    delete localStorage.currentUser;
     this.props.actions.logout().then(() => {
-      //$location.url('/login');
+      this.context.router.history.push('/login');
     });
   }
 
@@ -52,8 +53,13 @@ class Header extends React.Component {
   );
 };*/
 
+Header.contextTypes = {
+  router: PropTypes.object
+};
+
 Header.propTypes = {
-  loading: PropTypes.bool.isRequired
+  loading: PropTypes.bool.isRequired,
+  actions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {

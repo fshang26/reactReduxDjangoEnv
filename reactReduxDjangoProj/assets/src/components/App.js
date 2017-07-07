@@ -7,24 +7,38 @@ import Header from './common/Header';
 import {connect} from 'react-redux';
 
 class App extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      loggedin: this.props.loggedin
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.loggedin !== this.state.loggedin) {
+      this.setState({loggedin: nextProps.loggedin});
+    }
+  }
   render () {
     return (
       <div className="app-container">
-        <Header
+        {(localStorage.currentUser || this.state.loggedin) && <Header
           loading={this.props.loading}
-        />
+        />}
       </div>
     );
   }
 }
 
 App.propTypes = {
-  loading: PropTypes.bool.isRequired
+  loading: PropTypes.bool.isRequired,
+  loggedin: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
   return {
-    loading: state.ajaxCallInProgress > 0
+    loading: state.ajaxCallInProgress > 0,
+    loggedin: state.login.username !== ''
   };
 }
 

@@ -12,6 +12,11 @@ class CoursesPage extends React.Component {
     this.redirectToAddCoursePage = this.redirectToAddCoursePage.bind(this);
   }
 
+  componentWillMount() {
+    if (!localStorage.currentUser){
+      this.context.router.history.push('/login');
+    }
+  }
   // {this.props.courses.map(this.courseRow)}
   //courseRow(course, index) {
   //  return <div key={index}>{course.title}</div>;
