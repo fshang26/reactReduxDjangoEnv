@@ -4,28 +4,28 @@ import TextInput from '../common/TextInput';
 
 const LoginForm = ({userinfo, onSave, onChange, errors}) => {
   return (
-    <div>
+    <div className="login-form">
         <div>login error</div>
         <div>
           <TextInput
             name="username"
-            label="Username"
             value={userinfo.username}
             onChange={onChange}
+            palceholder="username"
             error={errors.username}
             type="text"/>
         </div>
         <div>
           <TextInput
             name="password"
-            label="Password"
             value={userinfo.password}
             onChange={onChange}
+            palceholder="password"
             error={errors.password}
             type="password"/>
         </div>
         <div>
-          <button type="submit" onClick={onSave}>Submit</button>
+          <button type="submit" onClick={onSave}>sign in</button>
         </div>
     </div>
   );
