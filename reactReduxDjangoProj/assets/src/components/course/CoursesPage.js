@@ -14,7 +14,7 @@ class CoursesPage extends React.Component {
 
   componentWillMount() {
     if (!localStorage.currentUser){
-      this.context.router.history.push('/login');
+      //this.context.router.history.push('/login');
     }
   }
   // {this.props.courses.map(this.courseRow)}

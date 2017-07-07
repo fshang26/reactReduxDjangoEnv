@@ -33,6 +33,7 @@ WIKI
   * https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
   * https://codeburst.io/react-router-v4-unofficial-migration-guide-5a370b8905a
   * No Match (404) https://reacttraining.com/react-router/web/example/no-match
+  * Redirect(Auth) https://reacttraining.com/react-router/web/example/auth-workflow
 
 - redux
   * unidirectional flow - data flow down, action flow up
