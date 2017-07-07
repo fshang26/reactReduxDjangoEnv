@@ -125,6 +125,9 @@ WIKI
 
 - package.json: "test": "mocha --reporter progress tools/testSetup.js \"assets/src/**/*.test.js\"",
 
+- django/python
+  * http://localhost:8000/admin/
+
 TODO
 - seperate css
 - package.json: packages' clarification in dependencies or devDependencies?

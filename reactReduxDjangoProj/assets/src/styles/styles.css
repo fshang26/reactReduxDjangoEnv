@@ -6,6 +6,10 @@
   .app-header {
     padding-bottom: 20px;
     padding-left: 20px;
+    .logout {
+      float: right;
+      cursor: pointer;
+    }
   }
   .app-container {
     height: 100%;

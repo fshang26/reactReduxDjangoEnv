@@ -10,7 +10,7 @@ class CoursesPage extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.redirectToAddCoursePage = this.redirectToAddCoursePage.bind(this);
-}
+  }
 
   // {this.props.courses.map(this.courseRow)}
   //courseRow(course, index) {
