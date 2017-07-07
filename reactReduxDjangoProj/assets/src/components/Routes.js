@@ -13,10 +13,10 @@ const Routes = () => (
     <Switch>
       <Route path="/" exact component={HomePage}/>
       <Route path="/login" exact component={LoginPage}/>
-      <Route path="/courses" exact render={() => (localStorage.currentUser ? (<CoursesPage/>) : (<Redirect to="/login"/>))}/>
-      <Route path="/course" exact render={() => (localStorage.currentUser ? (<ManageCoursePage/>) : (<Redirect to="/login"/>))}/>
-      <Route path="/course/:id" render={() => (localStorage.currentUser ? (<ManageCoursePage/>) : (<Redirect to="/login"/>))}/>
-      <Route path="/about" exact render={() => (localStorage.currentUser ? (<AboutPage/>) : (<Redirect to="/login"/>))}/>
+      <Route path="/courses" exact render={(props) => (localStorage.currentUser ? (<CoursesPage {...props}/>) : (<Redirect to="/login"/>))}/>
+      <Route path="/course" exact render={(props) => (localStorage.currentUser ? (<ManageCoursePage {...props}/>) : (<Redirect to="/login"/>))}/>
+      <Route path="/course/:id" render={(props) => (localStorage.currentUser ? (<ManageCoursePage {...props}/>) : (<Redirect to="/login"/>))}/>
+      <Route path="/about" exact render={(props) => (localStorage.currentUser ? (<AboutPage {...props}/>) : (<Redirect to="/login"/>))}/>
       <Route component={NotFoundPage}/>
     </Switch>
   </div>

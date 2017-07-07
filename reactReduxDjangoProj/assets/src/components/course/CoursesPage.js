@@ -12,11 +12,6 @@ class CoursesPage extends React.Component {
     this.redirectToAddCoursePage = this.redirectToAddCoursePage.bind(this);
   }
 
-  componentWillMount() {
-    if (!localStorage.currentUser){
-      //this.context.router.history.push('/login');
-    }
-  }
   // {this.props.courses.map(this.courseRow)}
   //courseRow(course, index) {
   //  return <div key={index}>{course.title}</div>;
@@ -38,7 +33,6 @@ class CoursesPage extends React.Component {
         <h1>Courses</h1>
         <input type="submit"
                value="Add Course"
-               className="btn btn-primary"
                onClick={this.redirectToAddCoursePage}/>
         <CourseList courses={courses}/>
       </div>
