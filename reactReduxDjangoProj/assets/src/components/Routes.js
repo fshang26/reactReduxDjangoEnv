@@ -5,6 +5,7 @@ import AboutPage from './about/AboutPage';
 import CoursesPage from './course/CoursesPage';
 import ManageCoursePage from './course/ManageCoursePage'; // eslint-disable-line import/no-named-as-default
 import LoginPage from './login/LoginPage';
+import NotFoundPage from './notfound/NotFoundPage';
 
 const routes = [{
   path: '/',
@@ -28,6 +29,8 @@ const routes = [{
 }, {
   path: '/about',
   main: AboutPage
+}, {
+  main: NotFoundPage
 }];
 
 const Routes = () => (
