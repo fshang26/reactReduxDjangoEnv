@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const TextInput = ({name, label, onChange, placeholder, value, error, type}) => {
-  if (error && error.length > 0) {
-    wrapperClass += " " + 'has-error';
-  }
-
   return (
     <div>
       {label && <lable htmlFor={name}>{label}</lable>}

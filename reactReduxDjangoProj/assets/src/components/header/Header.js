@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import HeaderContent from './HeaderContent';
 import {connect} from 'react-redux';
+import * as loginActions from '../../actions/loginActions';
+import {bindActionCreators} from 'redux';
 
 class Header extends React.Component {
   constructor(props, context) {
@@ -17,17 +19,32 @@ class Header extends React.Component {
     }
   }
 
+  logout() {
+    delete localStorage.currentUser;
+    this.props.actions.logout().then(() => {
+      this.context.router.history.push('/login');
+    });
+  }
   render () {
     if (localStorage.currentUser || this.state.loggedin) {
-      return (<HeaderContent loading={this.props.loading}/>);
+      return (<HeaderContent
+                loading={this.props.loading}
+                onLogout={this.logout}
+              />);
     }
     return null;
   }
 }
 
+Header.contextTypes = {
+  router: PropTypes.object
+};
+
+
 Header.propTypes = {
   loading: PropTypes.bool.isRequired,
-  loggedin: PropTypes.bool.isRequired
+  loggedin: PropTypes.bool.isRequired,
+  actions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
@@ -37,4 +54,10 @@ function mapStateToProps(state, ownProps) {
   };
 }
 
-export default connect(mapStateToProps)(Header);
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(loginActions, dispatch)
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

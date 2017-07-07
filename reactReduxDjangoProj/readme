@@ -132,6 +132,8 @@ WIKI
   * react csrftoken config via axios: https://gist.github.com/Yogendra0Sharma/5aa96ebfd0854623a5451c53672088d5
 
 TODO
+-
+- convert table to div in courselist.js
 - post failed when in <form> in LoginForm.js
 - redirect when not loggin (dynamic routes??)
 - seperate css

@@ -59,7 +59,8 @@ HeaderContent.contextTypes = {
 
 HeaderContent.propTypes = {
   loading: PropTypes.bool.isRequired,
-  actions: PropTypes.object.isRequired
+  actions: PropTypes.object.isRequired,
+  onLogout: PropTypes.func.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
