@@ -11,6 +11,7 @@ class Header extends React.Component {
     this.state = {
       loggedin: this.props.loggedin
     };
+    this.logout = this.logout.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
