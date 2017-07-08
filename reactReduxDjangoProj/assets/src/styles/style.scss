@@ -37,6 +37,9 @@ body {
   .content-login {
     .login-form {
       width: 20rem;
+      .title {
+        text-align: center;
+      }
     }
   }
 }

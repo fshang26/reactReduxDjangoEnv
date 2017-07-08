@@ -6,6 +6,7 @@ const LoginContent = ({userinfo, onSave, onChange, errors}) => {
   return (
     <div className="flex-center content-login">
       <div className="login-form">
+        <div className="title">尚峰</div>
         <TextInput
           name="username"
           value={userinfo.username}
