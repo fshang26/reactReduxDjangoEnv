@@ -4,7 +4,8 @@ import TextInput from '../common/TextInput';
 
 const LoginForm = ({userinfo, onSave, onChange, errors}) => {
   return (
-    <div className="login-form">
+    <div className="flex-center">
+      <div className="login-form">
         <div>login error</div>
         <div>
           <TextInput
@@ -27,6 +28,7 @@ const LoginForm = ({userinfo, onSave, onChange, errors}) => {
         <div>
           <button type="submit" onClick={onSave}>sign in</button>
         </div>
+      </div>
     </div>
   );
 };
