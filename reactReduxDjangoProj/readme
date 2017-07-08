@@ -131,6 +131,11 @@ WIKI
   * http://localhost:8000/admin/
   * react csrftoken config via axios: https://gist.github.com/Yogendra0Sharma/5aa96ebfd0854623a5451c53672088d5
 
+- CSS
+  * px, rem, em
+    # https://segmentfault.com/a/1190000005936910
+    # https://webdesign.tutsplus.com/zh-hans/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
+
 TODO
 -
 - convert table to div in courselist.js

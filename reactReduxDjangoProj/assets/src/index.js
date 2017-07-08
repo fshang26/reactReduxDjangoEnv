@@ -9,7 +9,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/header/Header';
 import {loadCourses} from './actions/courseActions'; // called a named import
 import {loadAuthors} from './actions/authorActions';
-import './styles/styles.scss';
+import './styles/style.scss';
 import '../../node_modules/toastr/build/toastr.min.css';
 import Routes from './components/Routes';
 
