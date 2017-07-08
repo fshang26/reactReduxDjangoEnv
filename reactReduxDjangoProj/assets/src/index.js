@@ -24,7 +24,6 @@ render (
       <div className="react-root">
         <Header/>
         <Routes/>
-        <span className="clearfix"></span>
       </div>
     </Router>
   </Provider>,
