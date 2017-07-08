@@ -21,7 +21,7 @@ store.dispatch(loadAuthors());
 render (
   <Provider store={store}>
     <Router>
-      <div>
+      <div className="react-root">
         <Header/>
         <Routes/>
       </div>
