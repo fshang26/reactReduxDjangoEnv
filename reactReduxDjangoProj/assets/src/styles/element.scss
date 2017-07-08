@@ -1,0 +1,85 @@
+@import "color";
+
+$radius: 3px;
+
+input, textarea, input[type=password]{
+  width: calc(100% - 2rem);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0rem;
+  border: 1px solid $grey;
+  font: 300 1.6rem / 2.4rem "Proxima-Nova", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: $radius;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: $radius;
+  -moz-background-clip: padding;
+  border-radius: $radius;
+  background-clip: padding-box;
+  color: #666666;
+  background-color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+  &:hover{
+    border-color: $dark-grey;
+    color: $dark-grey;
+  }
+
+  &:focus{
+    border-color: $blue;
+    outline: none;
+    color: $dark-grey-b40;
+    //.transition(all 0.2s ease);
+  }
+
+  &:disabled{
+    color: $dark-grey-w20;
+    background-color: $light-grey;
+
+    &:hover{
+      border: 1px solid $grey;
+    }
+  }
+
+  &.error{
+    border-color: $red;
+    //.transition(all 0.2s ease);
+  }
+
+  &.success{
+    border-color: $green;
+    color: $dark-grey;
+    //.transition(all 0.2s ease);
+  }
+}
+
+.button{
+  text-align: center;
+  margin: 0.5rem 0rem;
+  border: 1px solid $dark-grey;
+  -webkit-border-radius: $radius;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: $radius;
+  -moz-background-clip: padding;
+  border-radius: $radius;
+  background-clip: padding-box;
+  text-decoration: none;
+  color: $dark-grey;
+  font: 300 1.6rem / 3.4rem "Proxima-Nova", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:hover{
+    border-color: $blue;
+    color: $blue;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+}
+

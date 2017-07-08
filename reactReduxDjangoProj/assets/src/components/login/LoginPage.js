@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import * as loginActions from '../../actions/loginActions';
 import {bindActionCreators} from 'redux';
 import TextInput from '../common/TextInput';
-import LoginForm from './LoginForm';
+import LoginContent from './LoginContent';
 import axios from '../../api/api.config';
 import cookie from 'react-cookies';
 
@@ -43,7 +43,7 @@ class Login extends React.Component {
 
   render() {
     return (
-      <LoginForm
+      <LoginContent
         userinfo={this.state.userinfo}
         onChange={this.updateField}
         onSave={this.login}

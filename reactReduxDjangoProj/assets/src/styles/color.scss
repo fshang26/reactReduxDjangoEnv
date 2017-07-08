@@ -1,1 +1,18 @@
+
+$white: #fff;
+$black: #000;
+
+$light-grey: #ccc;
+$grey: #888;
+$dark-grey: #333;
+
+$red: #e3002a;
+
 $green: #00b03f;
+
+$blue: #0079c1;
+
+$dark-grey-b40: mix($dark-grey, $black, 60%);
+
+$dark-grey-w20: mix($dark-grey, $white, 80%);
+

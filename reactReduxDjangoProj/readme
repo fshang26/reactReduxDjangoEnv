@@ -139,7 +139,7 @@ WIKI
 TODO
 -
 - convert table to div in courselist.js
-- post failed when in <form> in LoginForm.js
+- post failed when in <form> in LoginContent.js
 - redirect when not loggin (dynamic routes??)
 - seperate css
 - package.json: packages' clarification in dependencies or devDependencies?
