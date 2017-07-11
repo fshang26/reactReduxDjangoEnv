@@ -12,6 +12,7 @@ import {loadAuthors} from './actions/authorActions';
 import './styles/style.scss';
 import '../../node_modules/toastr/build/toastr.min.css';
 import Routes from './components/Routes';
+import SideNav from "./components/sidenav/SideNav";
 
 // When would you pass initial state to this configureStore call? If you're wanting to rehydrate your store using some separate state that's passed down from the server or stored in local storage, then this is a good place to do so.
 const store = configureStore();
@@ -23,6 +24,7 @@ render (
     <Router>
       <div className="react-root">
         <Header/>
+        <SideNav/>
         <Routes/>
         <span className="clearfix"></span>
       </div>

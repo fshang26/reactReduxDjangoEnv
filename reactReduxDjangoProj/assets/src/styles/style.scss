@@ -13,13 +13,15 @@ body {
 }
 
 #main-app {
+  $header-height: 6rem;
+
   color: #333;
   .react-root {
   }
   .app-header {
     position: fixed;
     top: 0;
-    height: 6rem;
+    height: $header-height;
     width: 100%;
     float: left;
     background-color: $blue;
@@ -28,15 +30,30 @@ body {
     .logout {
       float: right;
       cursor: pointer;
+      margin-top: 15px;
+      margin-right: 15px;
+    }
+  }
+  .app-sitenav {
+    position: fixed;
+    z-index: 1;
+    top: 20vh;
+    left: 0;
+    background-color: $white;
+    border: 1px solid $dark-grey;
+    overflow-x: hidden;
+    //transition: 0.5s;
+    .site-menu-item {
     }
   }
   .app-content {
-    margin-top: 6rem;
+    margin-top: $header-height;
+    padding: 1rem;
     width: 100%;
     float: left;
   }
   .content-login {
-    height: calc(100vh - 18rem);
+    height: calc(100vh - 3 * #{$header-height});
     .login-form {
       width: 20rem;
       .title {

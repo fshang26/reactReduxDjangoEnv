@@ -28,10 +28,11 @@ class Header extends React.Component {
   }
   render () {
     if (localStorage.currentUser || this.state.loggedin) {
-      return (<HeaderContent
-                loading={this.props.loading}
-                onLogout={this.logout}
-              />);
+      return (
+        <HeaderContent
+          onLogout={this.logout}
+        />
+      );
     }
     return null;
   }
@@ -43,14 +44,12 @@ Header.contextTypes = {
 
 
 Header.propTypes = {
-  loading: PropTypes.bool.isRequired,
   loggedin: PropTypes.bool.isRequired,
   actions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
   return {
-    loading: state.ajaxCallInProgress > 0,
     loggedin: state.login.username !== ''
   };
 }
