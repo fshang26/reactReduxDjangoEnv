@@ -6,7 +6,9 @@ import LoadingDots from '../common/Loadingdots';
 const HeaderContent = ({loading, onLogout}) => {
   return (
     <div className="app-header">
-      <div className="logout" onClick={onLogout}>Logout</div>
+      <div className="logout" onClick={onLogout}>
+        <i className="fa fa-sign-out"></i>
+      </div>
       {loading && <div className="apiloading"><LoadingDots interval={100} dots={20}/></div>}
     </div>
   );

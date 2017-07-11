@@ -10,9 +10,10 @@ import Header from './components/header/Header';
 import {loadCourses} from './actions/courseActions'; // called a named import
 import {loadAuthors} from './actions/authorActions';
 import './styles/style.scss';
-import '../../node_modules/toastr/build/toastr.min.css';
 import Routes from './components/Routes';
 import SideNav from "./components/sidenav/SideNav";
+import '../../node_modules/toastr/build/toastr.min.css';
+import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 // When would you pass initial state to this configureStore call? If you're wanting to rehydrate your store using some separate state that's passed down from the server or stored in local storage, then this is a good place to do so.
 const store = configureStore();

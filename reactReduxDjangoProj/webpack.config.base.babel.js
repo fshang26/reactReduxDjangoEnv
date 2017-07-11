@@ -8,9 +8,11 @@ export default {
       path: path.resolve('./assets/bundles/'),
       filename: "[name].js"
   },
-  plugins: [],
+  plugins: [
+  ],
   module: {
-    loaders: [],
+    loaders: [
+    ],
   },
   resolve: {
     modules: ["node_modules"],
