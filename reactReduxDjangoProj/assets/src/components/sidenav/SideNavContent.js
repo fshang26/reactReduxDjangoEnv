@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import {NavLink, Link, Redirect} from 'react-router-dom';
-import LoadingDots from '../common/Loadingdots';
+import {NavLink} from 'react-router-dom';
 
-const SideNavContent = ({loading}) => {
+const SideNavContent = () => {
   return (
     <div className="app-sitenav">
       <div className="site-menu-item">
@@ -15,16 +13,9 @@ const SideNavContent = ({loading}) => {
       <div className="site-menu-item">
         <NavLink to="/about" activeClassName="active">about</NavLink>
       </div>
-      <div className="site-menu-item">
-        {loading && <LoadingDots interval={100} dots={20}/>}
-      </div>
       <span className="clearfix"></span>
     </div>
   );
-};
-
-SideNavContent.propTypes = {
-  loading: PropTypes.bool.isRequired
 };
 
 export default SideNavContent;

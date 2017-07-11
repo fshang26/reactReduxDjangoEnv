@@ -20,9 +20,7 @@ class SideNav extends React.Component {
   render () {
     if (localStorage.currentUser || this.state.loggedin) {
       return (
-        <SideNavContent
-          loading={this.props.loading}
-        />
+        <SideNavContent/>
       );
     }
     return null;
@@ -30,13 +28,11 @@ class SideNav extends React.Component {
 }
 
 SideNav.propTypes = {
-  loading: PropTypes.bool.isRequired,
   loggedin: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
   return {
-    loading: state.ajaxCallInProgress > 0,
     loggedin: state.login.username !== ''
   };
 }

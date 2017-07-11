@@ -33,17 +33,25 @@ body {
       margin-top: 15px;
       margin-right: 15px;
     }
+    .apiloading {
+      float: right;
+      margin-top: 15px;
+      margin-right: 15px;
+    }
   }
   .app-sitenav {
     position: fixed;
     z-index: 1;
     top: 20vh;
-    left: 0;
+    left: -40px;
     background-color: $white;
     border: 1px solid $dark-grey;
     overflow-x: hidden;
-    //transition: 0.5s;
+    transition: 0.5s;
     .site-menu-item {
+    }
+    &:hover {
+      left: 0;
     }
   }
   .app-content {
