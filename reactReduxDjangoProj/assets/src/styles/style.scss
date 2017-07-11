@@ -9,32 +9,34 @@ html {
 
 body {
   margin: 0rem;
-  // font-size: 1.6rem;
   font: 300 1.6rem / 2.4rem "Proxima-Nova", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #main-app {
-  height: 100vh;
   color: #333;
   .react-root {
-    height: 100%;
   }
   .app-header {
-    height: 8rem;
+    position: fixed;
+    top: 0;
+    height: 6rem;
     width: 100%;
     float: left;
-    border-bottom: 0.1rem solid #ccc;
+    background-color: $blue;
+    color: $white;
+    opacity: 0.9;
     .logout {
       float: right;
       cursor: pointer;
     }
   }
   .app-content {
-    height: calc(100% - 8rem);
+    margin-top: 6rem;
     width: 100%;
     float: left;
   }
   .content-login {
+    height: calc(100vh - 18rem);
     .login-form {
       width: 20rem;
       .title {
