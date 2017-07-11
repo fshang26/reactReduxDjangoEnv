@@ -16,7 +16,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className="page">
-        <h1>SF Home</h1>
+        <h1>sf home</h1>
         <p>React, Redux and Django SPA.</p>
         <Link to="/about">Learn more</Link>
         <span className="clearfix"></span>

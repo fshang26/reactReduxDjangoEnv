@@ -30,9 +30,9 @@ class CoursesPage extends React.Component {
     const {courses} = this.props;
     return (
       <div>
-        <h1>Courses</h1>
+        <h1>courses</h1>
         <input type="submit"
-               value="Add Course"
+               value="add course"
                onClick={this.redirectToAddCoursePage}/>
         <CourseList courses={courses}/>
       </div>
