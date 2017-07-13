@@ -125,16 +125,25 @@ WIKI
 
 - Immutable.js
 
+- CSS
+  * px, rem, em
+    # https://segmentfault.com/a/1190000005936910
+    # https://webdesign.tutsplus.com/zh-hans/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
+
+- modals with react-redux
+  * https://stackoverflow.com/questions/35623656/how-can-i-display-a-modal-dialog-in-redux-that-performs-asynchronous-actions/35641680#35641680
+  * https://codersmind.com/scalable-modals-react-redux/
+  * https://www.w3schools.com/howto/howto_css_modals.asp
+
+- side navigation menu/bar
+  * https://www.w3schools.com/howto/howto_js_sidenav.asp
+
 - package.json: "test": "mocha --reporter progress tools/testSetup.js \"assets/src/**/*.test.js\"",
 
 - django/python
   * http://localhost:8000/admin/
   * react csrftoken config via axios: https://gist.github.com/Yogendra0Sharma/5aa96ebfd0854623a5451c53672088d5
 
-- CSS
-  * px, rem, em
-    # https://segmentfault.com/a/1190000005936910
-    # https://webdesign.tutsplus.com/zh-hans/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
 
 TODO
 -

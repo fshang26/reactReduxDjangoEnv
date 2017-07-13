@@ -10,3 +10,6 @@ export const UPDATE_COURSE_SUCCESS = 'UPDATE_COURSE_SUCCESS';
 export const LOG_IN_SUCCESS = 'LOG_IN_SUCCESS';
 export const LOG_OUT_SUCCESS = 'LOG_OUT_SUCCESS';
 
+export const SHOW_MODAL = 'SHOW_MODAL';
+export const HIDE_MODAL = 'HIDE_MODAL';
+

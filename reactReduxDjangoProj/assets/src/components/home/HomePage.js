@@ -19,6 +19,7 @@ class HomePage extends React.Component {
         <h1>sf home</h1>
         <p>React, Redux and Django SPA.</p>
         <Link to="/about">Learn more</Link>
+        <div></div>
         <span className="clearfix"></span>
       </div>
     );

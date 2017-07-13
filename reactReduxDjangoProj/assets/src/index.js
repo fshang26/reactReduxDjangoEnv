@@ -12,6 +12,7 @@ import {loadAuthors} from './actions/authorActions';
 import './styles/style.scss';
 import Routes from './components/Routes';
 import SideNav from "./components/sidenav/SideNav";
+import ModalRoot from "./components/modal/ModalRoot";
 import '../../node_modules/toastr/build/toastr.min.css';
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
@@ -28,6 +29,7 @@ render (
         <SideNav/>
         <Routes/>
         <span className="clearfix"></span>
+        <ModalRoot/>
       </div>
     </Router>
   </Provider>,

@@ -14,6 +14,10 @@ const SideNavContent = () => {
       </div>
       <div className="site-menu-item">
         <i className="fa fa-info-circle" aria-hidden="true"></i>
+        <NavLink to="/sample" activeClassName="active">sample</NavLink>
+      </div>
+      <div className="site-menu-item">
+        <i className="fa fa-info-circle" aria-hidden="true"></i>
         <NavLink to="/about" activeClassName="active">about</NavLink>
       </div>
       <span className="clearfix"></span>
