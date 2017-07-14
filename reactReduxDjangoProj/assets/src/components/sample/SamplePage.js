@@ -20,8 +20,8 @@ class SamplePage extends React.Component {
   render() {
     return (
       <div className="page">
-        <h1>Sample</h1>
-        <div onClick={this.showNotification}>Show modal</div>
+        <h1>demos</h1>
+        <div onClick={this.showNotification}>Show notification</div>
       </div>
     );
   }
