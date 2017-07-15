@@ -3,6 +3,26 @@ import PropTypes from 'prop-types';
 
 // design: default header, body, footer 3 parts, specific modal can use content = {header, body, footer} to override
 class Modal extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("click", this.closeModal);
+  }
+
+  componentDidMount() {
+    window.addEventListener("click", this.closeModal);
+  }
+
+  closeModal(event) {
+    if (event.target.className === "app-modal") {
+      this.props.onClose();
+    }
+  }
+
   render () {
     return (
       <div className="app-modal">
