@@ -83,6 +83,7 @@ WIKI
           };
          }
          this.props.loadCourses()
+      4. connect(null, {hideModal})(Notification);
 
 - action creators
   rateCourse(rating) {

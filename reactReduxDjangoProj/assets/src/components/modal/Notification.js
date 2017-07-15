@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {hideModal} from '../../actions/modalActions';
 import Modal from './Modal';
 
-const Notification = ({ title, hideModal }) => {
+const Notification = ({content, hideModal}) => {
   const onClose = () => {
     hideModal();
     //if (afterClose) {
@@ -13,16 +13,16 @@ const Notification = ({ title, hideModal }) => {
   };
 
   return (
-    <Modal title={title} onClose={onClose}>
-      <button onClick={onClose}>
+    <Modal content={content} onClose={onClose}>
+      <div className='button' onClick={onClose}>
         Ok
-      </button>
+      </div>
     </Modal>
   );
 };
 
 Notification.propTypes = {
-  title: PropTypes.string,
+  content: PropTypes.object.isRequired,
   hideModal: PropTypes.func
 };
 

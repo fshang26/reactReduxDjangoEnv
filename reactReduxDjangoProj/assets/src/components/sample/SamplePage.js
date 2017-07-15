@@ -13,7 +13,10 @@ class SamplePage extends React.Component {
   }
   showNotification() {
     this.props.actions.showModal(MODAL_TYPE_NOTIFICATION, {
-      title: 'This is an awesome notification.'
+      content: {
+        header: 'Information',
+        body: 'Congrats! You are rewarded one dollar.'
+      }
     });
   }
 
