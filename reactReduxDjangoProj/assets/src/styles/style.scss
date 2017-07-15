@@ -48,9 +48,10 @@ body {
     padding: 10px;
     z-index: 1;
     top: 20vh;
-    left: -90px;
+    left: -95px;
     color: $white;
     background-color: $blue;
+    box-shadow: 6px 5px 12px 0 $dark-grey;
     overflow-x: hidden;
     transition: 0.5s;
     .site-menu-item {
