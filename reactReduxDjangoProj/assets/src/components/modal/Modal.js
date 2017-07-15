@@ -7,17 +7,20 @@ class Modal extends React.Component {
     return (
       <div className="app-modal">
         <div className="modal-content">
-          <div className="modal-content-header">
-            <div className="modal-content-header-content">
+          <div className="modal-header">
+            <div className="modal-header-content">
               {this.props.content.header}
               </div>
-            <div className="modal-close" onClick={this.props.onClose}>
+            <div className="modal-header-close" onClick={this.props.onClose}>
               &times;
             </div>
             <span className="clearfix"></span>
           </div>
-          <p>{this.props.content.body}</p>
+          <div className="modal-body">
+            {this.props.content.body}
+          </div>
           {this.props.children}
+          <span className="clearfix"></span>
         </div>
       </div>
     );

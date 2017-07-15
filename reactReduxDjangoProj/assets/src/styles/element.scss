@@ -55,31 +55,34 @@ input, textarea, input[type=password]{
 }
 
 .button{
+  font: 300 1.6rem / 3.4rem "Proxima-Nova", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: $blue;
+  color: $white;
   text-align: center;
   margin: 0.5rem 0rem;
-  border: 1px solid $dark-grey;
-  -webkit-border-radius: $radius;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: $radius;
-  -moz-background-clip: padding;
-  border-radius: $radius;
-  background-clip: padding-box;
+  border: 1px solid $blue;
   text-decoration: none;
-  color: $dark-grey;
-  font: 300 1.6rem / 3.4rem "Proxima-Nova", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 1.8rem;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 1.8rem;
+  -moz-background-clip: padding;
+  border-radius: 1.8rem;
+  background-clip: padding-box;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   &:hover{
-    border-color: $blue;
-    color: $blue;
-    text-decoration: none;
+    color: $yellow;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     cursor: pointer;
+  }
+  &.ok {
+    width: 7rem;
+    float: right;
   }
 }
 
