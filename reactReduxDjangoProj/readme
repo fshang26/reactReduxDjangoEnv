@@ -158,9 +158,7 @@ TODO
 - modal dialog
 - data grid
 - pivot table
-- should node_modules in git?
 - should Django Env in git?
-- should reactReduxDjangoProj/webpack-stats.json in git?
 - replace toastr/jquery
 - move rest api call to individual page
 - understand refs in react
