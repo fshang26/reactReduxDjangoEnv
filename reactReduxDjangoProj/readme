@@ -162,3 +162,9 @@ TODO
 - replace toastr/jquery
 - move rest api call to individual page
 - understand refs in react
+
+- to replace project name 'reactReduxDjangoProj':
+  * reactReduxDjangoProj/manage.py:
+  * reactReduxDjangoProj/settings.py:
+  * reactReduxDjangoProj/urls.py:
+  * reactReduxDjangoProj/wsgi.py:
