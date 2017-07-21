@@ -9,12 +9,12 @@ class Modal extends React.Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener("click", this.closeModal);
-  }
-
   componentDidMount() {
     window.addEventListener("click", this.closeModal);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("click", this.closeModal);
   }
 
   closeModal(event) {
@@ -48,7 +48,9 @@ class Modal extends React.Component {
 }
 
 Modal.propTypes = {
-  children: PropTypes.object.isRequired
+  children: PropTypes.object.isRequired,
+  content: PropTypes.object.isRequired,
+  onClose: PropTypes.object.func
 };
 
 export default Modal;

@@ -15,7 +15,7 @@ const Notification = ({content, hideModal}) => {
   return (
     <Modal content={content} onClose={onClose}>
       <div className="modal-footer">
-        <div className='button ok' onClick={onClose}>
+        <div className="button ok" onClick={onClose}>
           Ok
         </div>
         <span className="clearfix"></span>
