@@ -1,5 +1,5 @@
 .DS_Store
 .idea/
 reactReduxDjangoProj/webpack-stats.json
-reactReduxDjangoProj/assets/bundles/main.js
+reactReduxDjangoProj/assets/bundles/
 reactReduxDjangoProj/node_modules/
