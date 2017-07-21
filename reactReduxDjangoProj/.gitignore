@@ -1,3 +1,6 @@
 .DS_Store
 .idea
 *.pyc
+webpack-stats.json
+assets/bundles/
+node_modules/
